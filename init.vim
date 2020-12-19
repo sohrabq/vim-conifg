@@ -13,6 +13,7 @@ Plug 'leafoftree/vim-vue-plugin'
 Plug 'pangloss/vim-javascript'
 Plug 'yggdroot/indentline'      " shows the the indent levels
 Plug 'omnisharp/omnisharp-vim'
+Plug 'othree/javascript-libraries-syntax.vim'
 
 call plug#end()
 
