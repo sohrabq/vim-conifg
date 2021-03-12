@@ -14,6 +14,10 @@ Plug 'pangloss/vim-javascript'
 Plug 'yggdroot/indentline'      " shows the the indent levels
 Plug 'omnisharp/omnisharp-vim'
 Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'neoclide/coc-vetur'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'sheerun/vim-polyglot'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
@@ -26,17 +30,17 @@ nnoremap <C-f> :NERDTreeFind<CR>
 
 filetype plugin indent on " required
 syntax on
-set colorcolumn=80
+set colorcolumn=100
 set background=dark
 highlight ColorColumn ctermbg=0 guibg=lightgrey
-set number
+set relativenumber
 set nowrap
 set smartcase
 set hlsearch
 set noerrorbells
 set expandtab
 set smartindent
-set tabstop=4 softtabstop=4
+set tabstop=2 softtabstop=2 shiftwidth=2
 
 let g:javascript_plugin_ngdoc = 1 " enable syntax highlighing for javascript docs
 let g:indentLine_enabled = 1
