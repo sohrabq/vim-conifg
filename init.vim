@@ -15,9 +15,13 @@ Plug 'yggdroot/indentline'      " shows the the indent levels
 Plug 'omnisharp/omnisharp-vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'neoclide/coc-vetur'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go'
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
+Plug 'liuchengxu/vim-which-key'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
 
 call plug#end()
 
@@ -44,3 +48,8 @@ set tabstop=2 softtabstop=2 shiftwidth=2
 
 let g:javascript_plugin_ngdoc = 1 " enable syntax highlighing for javascript docs
 let g:indentLine_enabled = 1
+" sourcing the setttings file
+source $HOME/.config/nvim/general/settings.vim
+source $HOME/.config/nvim/keys/mapping.vim
+source $HOME/.config/nvim/plug-config/fzf.vim
+
