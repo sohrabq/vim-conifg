@@ -39,3 +39,5 @@ will show and search for all command you have recently used
 
 :Buffers
 will show and search for opened buffers
+
+:test
